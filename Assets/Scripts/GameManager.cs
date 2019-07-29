@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour {
 
 	bool gameHasEnded = false;
 
+    public Rigidbody rb;
+
 	public float restartDelay = 1f;
 
 	public GameObject completeLevelUI;
@@ -20,6 +22,8 @@ public class GameManager : MonoBehaviour {
 			gameHasEnded = true;
 			Debug.Log("Game Over.");
 			Invoke("Restart", restartDelay);
+            rb.freezeRotation = false;
+
 		}
 
 	}
