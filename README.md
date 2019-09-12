@@ -1,5 +1,5 @@
 # LaneSmash
-##3D Cube Runner Game
+## 3D Cube Runner Game
 
 
 ![](LaneSmash.gif)
